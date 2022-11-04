@@ -27,7 +27,9 @@ fun main() {
         } else if (opcio == 2) {
             println("Escriu el teu missatge")
             val MisatgePerEncriptar = readLine().toString()
-            val misatgeen = encrypt(MisatgePerEncriptar, public)
+            println("Posa aqui la clau publica del company al que vulguis enviar el missatge:")
+            val claupublica= readLine().toString()
+            val misatgeen = encrypt(MisatgePerEncriptar, claupublica)
             println("El teu missatge encriptat a qeudat aixi: $misatgeen")
         } else if (opcio == 3) {
             break
